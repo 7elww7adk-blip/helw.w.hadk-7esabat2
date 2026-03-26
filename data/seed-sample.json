@@ -1,0 +1,16 @@
+{
+  "branches": [
+    { "id": "BR-001", "name": "الفرع الأساسي", "code": "MAIN" },
+    { "id": "BR-002", "name": "الفرع الجديد", "code": "NEW" }
+  ],
+  "users": [
+    { "username": "owner", "role": "OWNER" },
+    { "username": "manager1", "role": "BRANCH_MANAGER" },
+    { "username": "accountant", "role": "ACCOUNTANT" },
+    { "username": "agent1", "role": "DELIVERY_AGENT" },
+    { "username": "viewer", "role": "VIEWER" }
+  ],
+  "orders": [
+    { "date": "2026-03-26", "branchId": "BR-001", "agentId": "AG-001", "customerName": "عميل تجريبي", "orderValue": 180, "deliveryFee": 25, "status": "ASSIGNED" }
+  ]
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>نظام إدارة الفروع - MVP</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>نظام إدارة الفروع والمحاسبة</h1>
+    <div id="userInfo"></div>
+  </header>
+
+  <main class="container">
+    <section id="loginView" class="card">
+      <h2>تسجيل الدخول</h2>
+      <form id="loginForm">
+        <label>اسم المستخدم<input type="text" id="username" required /></label>
+        <label>كلمة المرور<input type="password" id="password" required /></label>
+        <button type="submit">دخول</button>
+      </form>
+      <p class="hint">حساب تجريبي: owner / 123456</p>
+    </section>
+
+    <section id="appView" class="hidden">
+      <nav class="tabs" id="tabs"></nav>
+      <section id="content"></section>
+    </section>
+  </main>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/state.js"></script>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/validation.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
